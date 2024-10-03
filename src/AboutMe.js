@@ -91,7 +91,7 @@ function AboutMe() {
                     </Carousel>
                 </div>
 
-                    <a href="/repo" className={styles.buttonLink}>
+                    <a href="https://github.com/mhigman/Personal-Project-Hub" className={styles.buttonLink}>
                         <button className={styles.gotoProjects}>View More Details</button>
                     </a>
             </div>
