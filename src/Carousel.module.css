@@ -1,0 +1,81 @@
+
+.carouselButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: width, margin-right 0.3s ease;
+}
+
+.arrow {
+    width: 100%;
+}
+
+
+.carouselButtonPrev,
+.carouselButtonNext {
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute; /* Fix the buttons to stay outside the flow of the content */
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 4% 4%;
+    font-size: 1rem;
+    width: 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.carouselButtonPrev {
+  left: -4%;
+}
+
+.carouselButtonNext {
+  right: -4%;
+}
+
+.carouselButtonPrev:hover,
+.carouselButtonNext:hover {
+    width: 17%;
+}
+
+.carouselContainer {
+    position: relative; /* Relative to allow positioning of buttons */
+    width: 100%;
+    max-width: min(100vw, 600px);
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden; /* Ensure only one slide is visible at a time */
+  }
+  
+  .carouselContentWrapper {
+    width: 70%;
+    transform: translateX(22.5%);
+    overflow: hidden;
+  }
+  
+  .carouselContent {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carouselItem {
+    flex: 0 0 100%; /* Each item takes up 100% of the container */
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }

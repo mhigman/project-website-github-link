@@ -1,0 +1,56 @@
+
+
+.header {
+    color: #eaeaea;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.nav {
+    text-align: center;
+}
+
+.navList {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.selectedNavLink {
+    color: #192A2B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.profileHeaderPicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #2c3e50;
+    margin-right: auto;
+    justify-self: left;
+    margin-bottom: 20px;
+
+}
+
+.selectedNavImage {
+    background-color: #b3e6e6;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    border-radius: 10px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #454F4E;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navLink:hover {
+    color: #2980b9;
+}
